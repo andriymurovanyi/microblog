@@ -1,0 +1,10 @@
+{
+    "jwtSecret": "my-secret-key",
+    "db": {
+        "host": "localhost",
+        "port": "27017",
+        "name": "hot-dog",
+        "connectionString": "mongodb://localhost:27017/microblog",
+        "newUrlParser": true
+    }
+}
