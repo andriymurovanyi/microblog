@@ -20,7 +20,9 @@ const localStrategy = new LocalStrategy({
         const user = await model.User.findOne({ email });
 
         if (!user || !user.checkPassword(password)) {
-            return done(null, false, { message: 'User does not exist or wrong password.' });
+            return done(null, false, {
+                message: 'User does not exist or wrong password.'
+            });
         }
 
         return done(null, user);
